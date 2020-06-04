@@ -1,2 +1,3 @@
 # API-Movie-Search
-Required Python Libraries: wget ,requests and xlsxwriter
+API based Movie Search and data handling python script.
+Required Python Libraries: wget ,requests and xlsxwriter.
