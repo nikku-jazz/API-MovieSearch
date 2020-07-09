@@ -1,4 +1,3 @@
-import sys
 import wget
 import msvcrt
 import requests
@@ -35,7 +34,7 @@ def MovieSearch():
         keypress()
         while keystroke:
             MovieSearch()
-        sys.exit()
+        exit()
 
 def DataManipualation(currPage, currResults):
     global total_pages, total_results, keystroke
@@ -108,11 +107,10 @@ def SaveData(currResults):
 def SearchAgain():
     global movie_name
     searchAgain=input('\nSearch Again or Press Enter to Exit: ')
-    if searchAgain!='':
-        movie_name=searchAgain
-        MovieSearch()
-    else:
-        sys.exit(1)
+    if searchAgain=='':
+        exit()
+    movie_name=searchAgain
+    MovieSearch()
 
 def keypress():
     global keystroke
@@ -122,8 +120,9 @@ def keypress():
         keystroke=False
 
 movie_name=input('Enter Movie Name: ')
-if movie_name!='':
-    MovieSearch()
+if movie_name=='':
+    exit()
+MovieSearch()
 
 # def comments():
     #/////////////////////////////////////////////////////////////////////////////////////////////
