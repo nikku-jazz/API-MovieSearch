@@ -62,8 +62,6 @@ def RequestData(currPage):
     global movie_data, total_pages, total_results
     requested_data = requests.get(url =main_url+api+search_query+movie_name+no_of_pages+str(currPage))
     movie_data = requested_data.json()
-    total_pages=int(movie_data['total_pages'])
-    total_results=int(movie_data['total_results'])
 
 def ShowData(currResults):
     global movie_data
