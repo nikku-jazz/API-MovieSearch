@@ -86,7 +86,7 @@ def ShowData(currResults):
             wget.download(image_url)
         else:
             print('Image: NA')
-    SaveData(currResults)  
+    SaveData(currResults)
 
 def SaveData(currResults):
     global lines_XLSX
@@ -179,5 +179,4 @@ MovieSearch()
     #     worksheet.write(wbbb, movie_overview[i-2]) 
     # Finally, close the Excel file 
     # via the close() method. 
-    # workbook.close() 
-
+    # workbook.close()
