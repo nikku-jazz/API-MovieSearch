@@ -6,7 +6,7 @@ from requests.exceptions import ConnectionError
 
 
 main_url='https://api.themoviedb.org/3/search/movie?'
-api='api_key=1dcf69b9b95240032c80e5d374ca2bee'
+api='api_key=1dcf69b9b95240032c80e5d374ca2bee' #please remove sensitive data from here 
 search_query='&query='
 no_of_pages='&page='
 
